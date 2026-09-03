@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adoore pyar ❤️</title>
+<logo>❤️</logo>
+<head>
+<link rel="shortcut icon" href="images.jpg" type="image/x-icon">
+</head>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body {
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Georgia, serif;
+        background: radial-gradient(circle at center, #5c1238, #210719 70%);
+        color: white;
+    }
+
+    /* Glowing background */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 500px;
+        height: 500px;
+        background: #ff2f81;
+        border-radius: 50%;
+        filter: blur(150px);
+        opacity: 0.25;
+        animation: glow 4s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { transform: scale(0.8); opacity: 0.18; }
+        to { transform: scale(1.2); opacity: 0.35; }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 35px;
+        width: min(90%, 650px);
+        border-radius: 30px;
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.2);
+        box-shadow: 0 0 50px rgba(255, 30, 120, 0.25);
+        animation: appear 2s ease;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateY(40px) scale(.9);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .heart {
+        font-size: 75px;
+        animation: heartbeat 1.2s infinite;
+        filter: drop-shadow(0 0 20px #ff3d8d);
+    }
+
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        15% { transform: scale(1.25); }
+        30% { transform: scale(1); }
+        45% { transform: scale(1.18); }
+    }
+
+    h1 {
+        margin-top: 10px;
+        font-size: clamp(40px, 10vw, 75px);
+        color: #ffb3d1;
+        text-shadow: 0 0 20px #ff2f81;
+    }
+
+    .subtitle {
+        margin-top: 12px;
+        font-size: 21px;
+        color: #ffd9e8;
+    }
+
+    .message {
+        margin: 30px auto;
+        line-height: 1.8;
+        font-size: 18px;
+        color: #fff0f6;
+        max-width: 500px;
+    }
+
+    button {
+        border: none;
+        padding: 15px 30px;
+        border-radius: 50px;
+        background: linear-gradient(45deg, #ff2f81, #ff6ba8);
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(255,47,129,.5);
+        transition: .3s;
+    }
+
+    button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 35px rgba(255,47,129,.8);
+    }
+
+    #secret {
+        margin-top: 25px;
+        font-size: 22px;
+        color: #ffbdd7;
+        opacity: 0;
+        transform: translateY(15px);
+        transition: .8s;
+    }
+
+    #secret.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Floating hearts */
+    .floating-heart {
+        position: fixed;
+        bottom: -30px;
+        color: #ff4d91;
+        font-size: 20px;
+        pointer-events: none;
+        animation: floatUp linear forwards;
+        z-index: 1;
+    }
+
+    @keyframes floatUp {
+        from {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+        to {
+            transform: translateY(-110vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    /* Stars */
+    .star {
+        position: fixed;
+        width: 3px;
+        height: 3px;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle 2s infinite alternate;
+    }
+
+    @keyframes twinkle {
+        from { opacity: .2; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+    <script>
+        const password = "bandru21";
+        let attempts = 10;
+        const userInout = prompt("Enter the password to access the website (Attempts left: " + attempts + "):");
+
+        if (userInout === password) {
+            alert("Access granted! Welcome to the website.");
+        } else {
+            attempts--;
+            if (attempts > 0) {
+                alert("Incorrect password. Attempts left: " + attempts);
+                location.reload();
+            } else {
+                alert("Access denied. You have exhausted all attempts.");
+                window.close();
+            }
+        }
+    </script>
+
+
+<div class="container">
+    <div class="heart">❤️</div>
+
+    <h1>For Shivu</h1>
+
+    <div class="subtitle">
+        You are one i loved with my heart ✨
+    </div>
+
+    <p class="message">
+      <i> I know i hurt you with my words and my deeds for that i am very sorry whithout your love i'm nothing
+       i really want ki appa frrto patchup krriye and jida future ekthya sochya c odda he built krriye i really want appa edda appna ekk cute jya relation kharab na kriye .ekk insan jo kisi nu pyar krre oohh galt vv ta krrda naa yar sanu appe onnu smmjana pynda mai smmjuga na yaar please.Schi drrda c tut jaan toh kity na kity feel anndi c andro i will lose you. nhi c koi jine tuhade vnng pyar kita respect,disrespect,ego,self respect aah sab v taa apne he hunde na if we love someone ta gusse ch onu suun k onu shant krr k smjana v ta hunda ki pta ohh jide kolo tusi break up mnngya oohh ready he na hove kdi shhd k jan li ki pta onnnai ekk life he tuhade chh lbbi hove ki pta ohh drda hove ki i will looose  the person one day jide nal enna pyar krrda ki  pta ess daar krr kk ooh har vari lrryi hon tyy kddi muskan yaah kddi kartik ja kddi apni didi nu bolda hove ki pta oohh face he na krr ponda hove ohh laryi i don't know muskan nyy ki pejjya but jo v cc bss mai apna dsya c ki aahh kita mai oh maff nhi krr rahi please tere friend tuu smmjade please i dont want to lose her again ❤️</i>
+       <br><br>
+       tanu ptta nhi lagga kkdi nikhil da dil 12march toh badh oonu lor c tuhadi milna v bnndh hogya laryiya honiya v double hogiiye no meet no video call even no call kuj v krda ja bolda c taa laryi hundi c 
+       <br></br>
+      <i> now i know maihi galt c jithe minu ruk k ooh glltiya stop krniya chahidiya c mai firto krdina c dumb c phele smmj nhi aya hun jidu sbb kuj gwa betha tha hun i cry nhi theek feel hunda eda lggda smile ta hai face tyy but not real jo tuhada face dekh k andi c mai sariya possible cheeja kitiya ta ki tanu jaan toh rookala but kuj hoya ki jina kolo help li gya ona kddi try he nhi kita and she laughs on me and jinu rokna c oohne maire vrrge dffer nu oodi place ch block krta bss yaar aajo vapis rehna okha hoogya kkdi adat nhi c tuhade toh bina soojaan di khush rehn di sad maire nalo better tanu pta my happiness reflect different jidu tusi maire smmne hunde c ...</i> <div class=""></div>
+        <br><br>
+        i made this website tuhade li bss tuhade li and i will close this link jidu tusi prrhlogy sbb aggr time hoya tuhade pass vrrna oona tkk lock lgga k rkkhhu ess website tyy so that koi hor na google to open krrle . the reason why i made this is ki call tyy sara kuj khrab krr betha chat da ta reply v deserve nhi krda c sorry j mai tng kita tuhada time lyy k little bit but koi hor option nhi c smjan di
+<b>Minu pta kddi na kddi sade vich bohut pyar ena c ki log jealous hunde cc hale v hai tuhade dil vich bss i made u uncomfortable ta krr k ooh pyar tuhade dil chh he reh gya kyu ki mai deserving nhi c i still want you back jeena hee okkha hoogya mera im sorry please come back and take your me with you kuj v bad nhi bolna minu <emoji>😢</emoji></b>
+    </p>
+     <h2>Love you so much ❤️</h2>
+     <h3>So SORRY FOR MY DEEDS</h3>
+<h3>i will never hurt you again</h3>  
+
+    <button onclick="showSecret()">
+        Click for a little surprise 💌
+    </button>
+
+    <div id="secret">
+        one song for you ❤️ and speacial kuj <br>
+</div>
+<head>
+    <video width="300 height="240" controls>
+        <source src="v1.mp4" type="video/mp4">
+    </video>
+    <video width="300" height="240" controls>
+        <source src="v2.mp4" type="video/mp4">
+    </video>
+    > <video width="300" height="240" controls>
+        <source src="v3.mp4" type="video/mp4">
+    </video>
+        <video width="300" height="240" controls>
+        <source src="v4.mp4" type="video/mp4">
+    </video>
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <audio controls not autoplay>
+    <source src="Making It Up To You (shibbvuuu).mp3" type="audio/mpeg">
+    </audio>
+<script>
+    // Floating hearts
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.className = "floating-heart";
+        heart.innerHTML = ["❤️", "💕", "💗", "💖", "💘"][Math.floor(Math.random() * 5)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = (15 + Math.random() * 25) + "px";
+        heart.style.animationDuration = (4 + Math.random() * 5) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 9000);
+    }
+
+    setInterval(createHeart, 350);
+
+    // Stars
+    for (let i = 0; i < 70; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.top = Math.random() * 100 + "vh";
+        star.style.animationDelay = Math.random() * 2 + "s";
+
+        document.body.appendChild(star);
+    }
+
+    // Surprise message
+    function showSecret() {
+        const secret = document.getElementById("secret");
+        secret.classList.add("show");
+
+        // Heart explosion
+        for (let i = 0; i < 20; i++) {
+            setTimeout(createHeart, i * 80);
+        }
+    }
+   
+</script>
+</body>
+</html>
+
